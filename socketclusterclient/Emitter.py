@@ -8,12 +8,12 @@ class emitter(object):
     def onack(self, key, function):
         self.mapack[key] = function
 
-    def execute(self, key, object):
+    async def execute(self, key, object):
 
         if key in self.map:
             function = self.map[key]
             if function is not None:
-                function(key, object)
+                await function(key, object)
 
     def haseventack(self, key):
         # print "return value is "+self.mapack[key]

@@ -12,7 +12,7 @@ setup(
     download_url='https://github.com/sacOO7/socketcluster-client-python/tarball/v1.2.2',  # I'll explain this in a second
     keywords=['websocket', 'socketcluster', 'nodejs', 'client', 'socketclusterclient'],  # arbitrary keywords
     install_requires=[
-          'websocket-client',
+          'websockets',
       ],
     classifiers=[],
 )
